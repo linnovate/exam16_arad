@@ -173,3 +173,32 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+alert hello 
+var function st(var tree)
+{
+	for (int i=1; i<= tree.id; i++)
+	{
+		for( int j=1; j<=30 ;j++)
+		{
+				if (tree.parentID[j]==i)
+					print(" "tree.title[j] )
+		}
+		
+			 
+	}
+}
+
+			
+		
+	
+		
+		
+	
+	
+	 
+	 
+	
+
+
+
+
