@@ -173,3 +173,36 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+
+function chipus( struct tree* t)
+{
+	int min=0;
+	for(;t->parentID!=null;t->t->parentID)
+	{
+		
+		if(t->parentID&&parentID==min&&min==0)
+		{
+			
+			  document.writeline(t->title,t->gender,t->id); 
+			min++;
+		}
+			else{
+				if(t->parentID&&parentID==min)
+				{
+					document.writeline(t->id,t->title,t->gender); 
+			
+			         if(t->parentID->parentID==null)
+				     min++;
+				     else return;
+				}
+					  
+			}
+	}
+}
+
+
+
+
+
+
+  
