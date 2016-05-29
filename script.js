@@ -1,3 +1,69 @@
+
+var treeOrderBy=[] ;//   מערך בו יהיו אנשים ממוינים לפי IDPARENT; 
+var indexx=0;
+ function binaryTree()
+{
+	
+	var node=0;
+	  for(var i=0;i<tree.length;i++)
+	  {
+		  // ובודק מי האבא שלילדים שלו אין ילדים ומכני ס אותו למשתנה
+		  if(tree[i].parentID>node)
+		  {
+			  node=tree[i].parentID;
+		  }
+	  }
+	  //שליחה לפונ  את המשתנה
+	  enterTotreeOrderBy(node);
+}
+//הפונ מכניסה למערך בצורה ממוינת מהילד האחרון עד לאבא
+function enterTotreeOrderBy(node)
+{
+	//בדיקה אם הגיע לאיבר האחרון
+	if(node!=0)
+	{
+		//מעבר על המערך והכנס למערך החדש בצורה מסודרת מאחרון עד ללמעלה
+		for(var i=0;i<tree.length;i++)
+		{// בדיקה כל ילד אם האבא שלו עכשיו
+			if(tree[i].parentID==node)
+			{
+			//
+			
+				var child=document.getElementById("list").innerHTML;
+				//בנית איבר חדש ברשימה
+			child.innerHTML='<li value="+tree[i].title+"><li/>'
+			if(tree[i].gender)=="male")
+			{
+				child.style.color="red"
+			}
+				treeOrderBy[indexx]=tree[i];
+				indexx++;
+			}
+		}
+		//  שליחה שוב לאותה פןנ רק אם האיבר הבא בתור
+		document.getElementById("list").innerHTML='<ul id="+node+"><ul/>'
+		enterTotreeOrderBy(node-1);
+		
+	}
+	else
+	{
+		//הכנסת במיקום האחרון את האבא הראשון
+		treeOrderBy[indexx]=0;
+	}
+	
+}	  
+/* function printBinaryTree()
+{
+	for(var i=0;i<)
+	var listPerson=document.getElementById("list").innerHTML=treeOrderBy;
+	
+} */
+		
+	
+
+	alert("aaaa")
+
+ordeBybinaryTree(tree); */
 var tree = [
 {
 	id : 1,
