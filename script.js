@@ -1,5 +1,6 @@
-var tree = [
-{
+  var numn=0;
+ var tree = [
+{ 
 	id : 1,
 	title: "Alex",
 	parentID: 0,
@@ -173,3 +174,47 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+
+function tree2(){
+  this.id;
+  this.son [];
+  this.namson;
+
+}
+
+	function seder1(){
+
+	for(var i=0,tree,i++)
+	{
+	 
+		tree2[i] =new tree2();
+		tree[i].id=i+1;
+		seder2(i+1);
+		
+	}
+	numn=i+1;
+}
+function seder2(idp){
+	var j=0
+	for(var i=0,tree,i++)
+	{
+		
+		if(tree[i].parent==idp)
+		{
+			tree2.son[j]=tree[i].id;
+			j++
+			}
+			
+	}
+	
+	tree2.numson=j;
+}
+function result1(){
+var mac[] ;
+for(var i=0,tree2,i+1=numn)
+mac[i]=1;
+ for(var i=0,tree2,i++)
+{
+ 
+}
+}
