@@ -173,3 +173,51 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+
+int m=0;
+parent pr;
+מציאת הראש
+for(int i=0;i<long tree;i++)
+{
+	if(tree[i].parentID==0||tree[i].parentID!=value)
+	{
+        m++;
+		print(tree[i].id,tree[i].title,tree[i].gender,1);
+		foundBen(tree[i].id);
+	}
+}
+
+
+פתיחת דיו לראש משפחה והדפסת הראש
+function print(int id,var name,gender,int nm)
+{
+if(nm==1)
+<div id=mishpacha+'m'><div>
+
+<input id="bu'+'dor" type="div" value=title+' '+gender/>
+<br/>
+
+
+}
+
+
+int function foundBen(int idABA,int i)
+{
+	forech(tree+i+1)
+	{
+		if(tree[i].parentID==idABA){
+		    print(tree[i].id,0);
+			foundBen(tree[i]).id,0;
+		}
+		else
+		{
+			if(tree[i].parentID!=0)
+			{
+				 foundBen(tree[i].parentID,i)
+			}
+
+		}
+	}
+}
+////////////////////////////////////////////////////////////////////////////////
+
