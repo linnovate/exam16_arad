@@ -173,3 +173,14 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+function start() {
+  var p = document.getElementById("p1");
+  var li = document.createElement("input");
+  li.setAtribute("type","li");
+  li.setAtribute("value","blumi");
+  alert("gdsgdsg");
+  p1.insertbefore(li);
+}
+function start2() {
+  alert("vdvcbcxbcxbcxbcxb");
+}
