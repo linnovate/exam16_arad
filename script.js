@@ -1,3 +1,31 @@
+function serchsaba (tree)
+{
+	var sab=new array()
+	var degl=0;
+	var mone=0;
+	for(i=0;i<tree.length;i++)
+	{
+		degl=0;
+		for(j=0;j<tree.length;j++)
+			if(tree[i].id==tree[j].parentID)
+				degl=1;
+			if(degl==0)
+			{
+				sab[mone]=tree.id;
+				mone++;
+			}
+	}
+	return(sab);
+}
+function serchbanim(tree,aba)
+{
+	var mone=0;
+	
+	for(i=0;i<tree.length;i++)
+		if(tree[i].parentID==aba.id)
+	       return tree[i].id;
+}
+
 var tree = [
 {
 	id : 1,
