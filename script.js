@@ -173,3 +173,41 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+
+
+<script type="text/javascript">  
+
+
+function SetParentsInArray(var tree[])
+{
+	arrayParents= new array()
+arrayParents.push(tree[0]);
+for (int i = 0; i < tree.length; i++)
+{
+	for(int j = 0; j < arrayParents.length; j++)
+	{
+		if(tree[i].parentID != arrayParents[j].id)
+		arrayParents.push(tree[i]);
+	}
+	}
+
+return arrayParents;
+}
+
+function PrintFamilyTree(var tree[])
+{
+	var newArray = arrayParents;
+	
+	var i = tree[0].parentID;
+	var j = tree[0].id;
+	for ( i = 0; i <= tree.length; i++)
+	{
+		for (j = 1; j < tree.length; j++)
+		{
+			document.write("parentID: "+ i +"id: "+ j + "name: "+ tree[i].title+ "gender: "+ tree[i].gender);
+			document.write(<br>);
+		}
+	}
+}
+  
+</script> 
