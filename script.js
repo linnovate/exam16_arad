@@ -173,3 +173,36 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+//פונקציה למעבר על מערך העץ 
+function ShowTheTree(tree,curI){
+	//לולאה העוברת על כל המערך
+		for(var i=curI; i<tree.length; i++)
+		{
+			//התחלת רשומה חדשה לכל תא במערך- אם אין לו בנים הוא יוצג בודד
+			document.write("<ul>")
+			if(tree[i].gender=="male")
+						document.write("<lh class="male">tree[i].title</lh>")
+					else
+						document.write("<lh class="female">tree[i].title</lh>")	
+			//לולאה העוברת על כל תא במערך ובודקת מי הבנים שלו
+			for(var j=i+1 ;j< tree.length ;j++)
+			{
+				//מציאת בן
+				if(tree[j].parentID==i)
+				{
+					//הוספת הבן לרשימה ע"פ שיוך של זכר/נקבה
+					if(tree[j].gender=="male")
+						document.write("<li class="male">tree[j].title</li>")
+					else
+						document.write("<li class="female">tree[j].title</li>")	
+					//חזרה לפונקציה לבדיקת הבנים של הבן הנוכחי
+					ShowTheTree(tree+j,j)					
+				}
+			}
+			//סגירת הרשימה
+			document.write("</ul>")
+		}
+}
+//טעינת הפונקציה בזמן טעינת הדף
+document.onload = ShowTheTree(tree,0)
+			
