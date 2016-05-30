@@ -173,3 +173,70 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+function Print(Tree[i])//פונקציה הדפסה 
+{
+	
+	var x=tree[i];//מקבל את מספר המערך 
+	var MoneTree=tree.lengh-1//אורך מערך  ילדים במשפחה 
+	 var MoneArr=0;
+	for(i=0;i<MOneTree;i++)
+	{
+		if(tree[i]==x)//שואל האם 
+			if(tree.gender==mala)
+			{
+			document.write(tree[i].title)
+			}
+		else{
+			document.inerHtml.writeln(tree[i].title)
+		}
+	}
+	
+
+	
+}
+
+function NewArr(FamilyNetWOrKSise,ParentId,Mone)
+{
+	var MoneChildren=0;
+	for;i=0;i<FamilyNetWOrKSise;i++)
+	{
+		var ParentId=tree.id[i];
+		if(tree.parentID==ParentId)
+			MoNeGirls++;
+		if(i==FamilyNetWOrKSise-1)
+			return MoNeGirls;
+		
+	} 
+}
+function BuildingAnAllFamily(){
+	var FamilyNetWOrKSise=tree.length-1;
+	//var EachFamilySystem[FamilyNetWOrKSise];
+	for(i=0;i<FamilyNetWOrKSise.lengh-1;i++)
+	{
+		var ParentId=tree[i].id;
+		NewArr(FamilyNetWOrKSise);
+		{
+			
+				var ChildernInFamely=0;//מונה ילדים במשפחה
+				ChildernInFamely=tree.ParentId;//מכניס את אב הבן 
+				if(tree.ParentId==ChildernInFamely)//שואל האם הID של האב שווה לID הבן במקום הראשון של המערך
+					var MoNeFamely=0;//מונה כמה מקומות
+				if(tree.ParentId==ChildernInFamely)//  לאב הזיהוי שואל האם המזהה של האב שווה
+				{
+					
+					Print(tree[i]);//שולח את מיקום המערך 
+					
+				}
+			
+			
+					
+			}
+		}
+	}
+	}
+	
+	
+	}
+	
+	
+}
