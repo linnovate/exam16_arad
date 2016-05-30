@@ -173,3 +173,55 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+
+// Giving all children under the father sent
+
+
+
+
+window.onload = function() {
+	$(document).ready(function()
+	{
+		
+		$('#list').append('<li id=p'+tree[0].id+'>'tree[0].title'</li>');
+		
+		// Giving all children under the father 
+			function getChild(giveParent)
+			{
+				for(i=0:i<tree.length:i++)
+				{
+					 $('<li id=p'+ tree[i].id + '>').append('<ol id=p'+ i +'>'
+					 
+					 
+					 //For each parent passes the kids
+					for(j=1:j<tree.length:j++)
+					{
+						 if(giveParent.id==tree[i].parentID)
+						 {
+							  $('<ol id=p'+ i + '>').append('<li id=p'+ tree[j].id + '>'tree[j].title'</li>');
+							  //
+							  if(tree[j].gender==male)
+								$(document).ready(function () {
+									$("#id=p" + tree[j].id).css({ "backgroundColor": "blueColor" });
+							else
+								$(document).ready(function () {
+									$("#id=p" + tree[j].id).css({ "backgroundColor": "red" });
+						 
+						 }
+						 //For each child passes the kids to show them
+						 getChild(tree[j])
+					}
+					'</ol>');
+				}
+					  
+			}
+			
+			
+	})
+	
+ };
+
+
+
+
+
