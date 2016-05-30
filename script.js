@@ -1,3 +1,57 @@
+ var arrFamilyTree={};
+ var flag
+ var arr=[] 
+ 
+ //פונקציה שבודקת לאיזה איש אין ילדים
+ function The_lowest_organ(){
+	 for(int 0;int<tree.length;int++){
+		 for(i 0;i<tree.length;i++)
+		 {
+			 if(tree[int].id==tree[i].parentID){
+				  flag=null
+				  break;
+			 }
+			 else{
+				flag=tree[int] 
+			 }
+		 }
+	 }
+	 Finding_Father_of_the_object(flag)
+ }
+ //פונקציה שבודקת מי האב של האוביקט שנשלח
+ function Finding_Father_of_the_object(object){
+	for(int 0;int<tree.length;int++){
+		if(object.parentID==tree[int].id){
+			for(i 0;i<tree.length;i++){
+				if(tree[int].id==tre[i].parentID){
+					arr[arr.length]=tree[i];
+				}
+			}
+			break;
+		}
+		
+	}
+ } 
+ //פונקציה שבודקת מי הילדים של האוביקט הראשון
+ function Boys_under_the_object(){
+	 for(int 0;int<tree.length;int++){
+		 if(tree[int].parentID==tree[0].id)
+		 {
+			 arrFamilyTree.tree[int].id={};
+		 }
+	 }
+	 for(i 0;i<arrFamilyTree.length;i++){
+		 for(j 0;j<tree.length;j++)
+		 if(arrFamilyTree[i].id==tree[j].parentID)
+		 {
+			 
+		 }
+	 }
+ }
+ 
+ 
+	
+ 
 var tree = [
 {
 	id : 1,
