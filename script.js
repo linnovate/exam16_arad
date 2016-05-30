@@ -1,3 +1,58 @@
+var i=1;
+	var elementId=tree[i].id;
+	var elementName=tree[i].title;
+	var elementParentId=tree[i].parentID;
+	var elementGender=tree[i].gender;
+	var listson[];
+	document.getElementsByName("body").innerHTML(<table><tr id= "par"+elementId><td>elementName</td></tr></table>);
+	listson<<elementId;
+	i++;
+	while(listson.length<tree.length){
+	var elementId=tree[i].id;
+	var elementName=tree[i].title;
+	var elementParentId=tree[i].parentID;
+	var elementGender=tree[i].gender;
+	if(listson.content(elementId)
+	{   
+		break;
+	}
+	else{
+	if(document.getElementById(elementParentId)!=undefined){
+		if (ifPar(elementId==false)){
+			document.getElementById("par"+elementParentId).innerHTML(<td> elementName </td>);
+		}
+		else{
+			document.getElementById("par"+elementParentId).innerHTML(<tr id= "par"+elementId><td> elementName </td></tr>);
+		}
+		i++;
+		listson<<elementId;
+	    printByGender(elementGender, elementId);
+	}
+	else
+	{
+	    break;			
+	}
+	}
+	//שאילתא אם יש מתחתיו עוד
+	function ifPar(id){
+for(i=0;1<tree.length;i++){
+	if(tree[i].parentID==id)
+		return true;
+	else
+		return false;
+}		
+	}
+	function definition(ii){
+
+	}
+function printByGender(elementGender, elementId){
+	var myObj=document.getElementById(elementId);
+	if(elementGender.val=="male"){
+		myObj.style.color="red";
+	}
+	else
+		myObj.style.color="yello";		
+}
 var tree = [
 {
 	id : 1,
