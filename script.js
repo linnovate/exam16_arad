@@ -173,3 +173,31 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+listfam = document.getElementById("famlist")
+function makelist(){
+	var i;
+for(i=0;i<tree.length;i++){
+	//debugger
+	if (tree[i].parentID==i){
+	listfam.innerHTML=listfam.innerHTML+ "name:" +tree[i].title+ " "+tree[i].gender+"<br />";
+	
+	callchild(tree[i].id);
+	}
+}	
+
+function callchild(parent1){
+	var j;
+	for (j=parent1;j<tree.length;j++){
+		if(tree[j].parentID==parent1){
+		listfam.innerHTML=listfam.innerHTML+"name:" +tree[j].title+ " "+tree[j].gender+"<br />";
+	//debugger
+	callchild(tree[j].id);	}
+	}
+}
+}
+treelist = document.getElementById("famlist1")
+function build1(item,index){
+	treelist.innerHTML=treelist.innerHTML+ index+ "name:"+ item.title+" " + item.gender+"<br />"
+}
+
+
