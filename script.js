@@ -173,3 +173,95 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+
+list.innerHTML="<table><tr><td value='dfws' text='ef'>'jhbgkj'</td></tr></table>";
+treeTable.innerHTML="<tr><td value='dfws' text='ef'>'jhbgkj'</td></tr>";
+var dor=0;
+function tree1(dor)
+{
+	for (j=0;j<newTree.length;j++)
+	{	
+		if(newTree[j].getAttention==dor)
+		list.innerHTML="<li value='newTree[j].title' class='newTree[j].gender' id=''li'+ newTree[j].id'></li>"	
+	
+	}
+}
+
+tree1();
+var newTree=[];
+//בניית מערך מקביל בתוספת מס' הדור לכל אדם
+function findGeneandParents()
+for (j=0;j<tree.length;j++)
+{
+	var idParentPerson=tree[j].id;
+for (i=0;i<tree.length;i++)
+	{
+		var generations=0
+		
+		if(tree[i].id==idParentPerson)
+		{
+			generations++;
+			findGeneandParents(tree[i].idParent)
+		}
+	
+			newPerson.id=tree[i].id;
+			newPerson.title=tree[i].title;
+			newPerson.parentID= tree[i].parentID;
+			newPerson.gender= tree[i].gender;
+			newPerson.generation=generation;
+			
+			newTree[j]=newPerson;
+	}	
+}	
+	/*for (j=0;j<tree.length;j++)
+	{
+		
+	}	*/
+	findGeneandParents(0)
+	function say(a){alert(a)}
+say(newTree[2].generation)	
+}
+
+
+
+li1.text=tree[0].title
+function say(a){alert(a)};
+
+//בנית מערך כשאר הדורות מקוננים אחד בתוך השני
+var arrychildren=[];
+var generation=0;
+
+function findChildren(idParent)
+{
+	//מספר הילד במערך הילדים
+		var j= 0;
+	for (i=0;i<tree.length;i++)
+	{
+		list.innerHTML="<ul value='newTree[j].title' class='newTree[j].gender' id=''li'+ newTree[j].id'></ul>"
+		var children=[];
+		if(tree[i].parentID==idParent)
+		{
+			
+			var newPerson=new object();
+			newPerson.id=tree[i].id;
+			newPerson.title=tree[i].title;
+			newPerson.gender= tree[i].gender;
+			newPerson.generation=generation;
+			children[j]=newPerson;
+			j++;
+			findChildren(newPerson.id);
+			list.innerHTML="<li value='newTree[j].title' class='newTree[j].gender' id=''li'+ newTree[j].id'></li>"
+		}
+		arrychildren[i]=children;
+		
+	}
+	
+}
+var currentPerson= new object();
+currentPerson.id=tree[0].id;
+
+currentPerson.children=findChildren(tree[0].id);
+
+function do(){ document.write(arrychildren)};
+do();
+

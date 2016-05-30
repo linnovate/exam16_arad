@@ -1,3 +1,6 @@
-body div {
+.female {
 	color: red;
+}
+.male{
+	color:blue;
 }
