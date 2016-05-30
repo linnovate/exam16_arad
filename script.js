@@ -173,3 +173,35 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+function FamilyTree()
+{
+	document.write("Alex");//
+	document.write("<br />");
+	var i;
+	var j;
+	for(  i = 1; i < 30; i++ )// The first loop
+{	
+	for(  j = 1; j < 30; j++ ) //Second loop comes with ID the parents for all children and checks whether the id is equal to parentID
+	{
+		if(i==tree[j].parentID){
+		document.write(tree[j].title+ " ");
+		}
+	}document.write("<br />");
+}
+}
+FamilyTree()
+marker()
+function marker()
+{
+	for(i=0;i>29;i++)
+	{
+		if(tree[i].gender=="male"){
+			tree[i].gender.style.color="blue";}
+			else
+				tree[i].gender.style.color="red";
+		
+			
+	}
+}
+
+
