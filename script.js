@@ -1,4 +1,5 @@
-var tree = [
+var tree = [ 
+</script>
 {
 	id : 1,
 	title: "Alex",
@@ -172,4 +173,33 @@ var tree = [
 	title: "Tom",
 	parentID: 2,
 	gender: "male"
+}
+function iterate(current, depth) {
+    var children = current.childNodes;
+    for (var i = 0, len = children.length; i < len; i++) {
+        iterate(children[i], depth + 1);
+    }
+}
+iterate(parentElement, 0);
+var stack = [{
+    depth: 0,
+    element: treeHeadNode
 }];
+var stackItem = 0;
+var current;
+var i, len, children, id, title, parentID,gender;
+var depth;
+
+while (current = stack[stackItem++]) {
+   
+    depth = current.depth;
+    current = current.element;
+    children = current.childNodes;
+    for (i = 0, len = children.length; i < len; i++) {
+        stack.push({ 
+            element: children[i],
+            depth: depth + 1
+        });
+    }
+}
+];
