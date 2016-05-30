@@ -1,4 +1,6 @@
+
 var tree = [
+
 {
 	id : 1,
 	title: "Alex",
@@ -172,4 +174,60 @@ var tree = [
 	title: "Tom",
 	parentID: 2,
 	gender: "male"
-}];
+	}];
+	var mone=tree.length;
+    arr=new array[]=0;
+	var m=0;i=0;b=0;
+	function tree(t){
+		for(i=0;i<mone;i++;m++)
+		{
+			if(parentID==0)
+			{arr[m]=id;}
+		}
+		var m=arr.length;
+		var x=0,y=0;
+		for(i=0;i<m;i++;x+10)
+		{
+			for(y=0;y<mone;y++)
+				if(arr[i]==t[y].id)
+					{{if(t[y].gender==male)
+					(<div style="x= x; backgroundColor=blue">)
+					else(<div style="x= x; backgroundColor=red">)}}
+				
+					
+		}
+		t(arr);
+	}
+	function t(t)
+	{
+		var a=0;
+		//y+=20;
+		for(a=0;a<m;a++;)
+		{
+			for(i=0;i<mone;i++)
+			{
+				if(arr[a]==t[i].parentID)
+				{
+				if(t[i].gender==male)}{<div id; y=t[i].parentID;x=id; value=t.title;backgroundColor=blue>}
+				else{<div id; y=t[i].parentID;x=id; value=t.title;backgroundColor=red>}
+				break;
+				}
+			}
+			
+		}
+		}
+		function func(t)
+		{a=0;
+			for(i=0;b<mone&i<mone;i++;a++)
+			{
+				arr[a]=t[i].id;
+			}
+			b++;
+			t(arr);
+		}
+		
+	}
+	<div>
+	div1=
+	<div>
+	
