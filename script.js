@@ -173,3 +173,51 @@ var tree = [
 	parentID: 2,
 	gender: "male"
 }];
+
+var l = tree.language ;
+
+
+
+function first()
+{
+	var l = tree.language ;
+	printArr(l,0);
+	
+}
+
+
+	  
+//function printArr(l,idt)
+
+
+	//if (tree[l-1][0]==idt||tree[l-1][0]==0)
+	//{
+		//document.write(tree[l-1][1]);// מדפיס כאשר מגיע  לאבא
+		//return;
+	//}
+	//else
+     // printArr(l-1,tree[l-1][2]);
+     // document.write(tree[l-1][1]);
+function printArr(l,idt)
+{
+
+	if (tree[l-1][0]==idt)
+	{
+		document.write(tree[l-1][1]);// מדפיס כאשר מגיע  לאבא
+		//return;
+		(if )
+		printArr(tree.language,tree[l-1][0]);
+		return;
+		   
+	}
+	else
+      printArr(l-1,itd);
+  //  if((l-1)> 0) 
+	//	printArr(tree.language,tree[l-1][0]);
+
+		
+}
+
+	 
+}
+ 
